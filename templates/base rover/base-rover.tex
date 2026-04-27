@@ -16,6 +16,7 @@
 \setcounter{secnumdepth}{0} % remove section numbering
 \usepackage{titlesec}
 \usepackage{tikz} % Gói để vẽ khung hình thẻ
+\usepackage{graphicx}
 \usepackage[hidelinks]{hyperref} % Tùy chọn hidelinks sẽ ẩn khung viền và giữ màu đen cho chữ %
 \titlespacing{\subsection}{0pt}{*1.5}{*0.5} % remove vertical spacing above and below
 \titlespacing{\subsubsection}{0pt}{*0.5}{*0.5}
@@ -35,8 +36,7 @@
     \begin{minipage}[c]{0.2\textwidth}
         \begin{tikzpicture}
             % Khung hình chữ nhật 2.4cm x 3.2cm
-            \draw[lightgray, line width=0.8pt] (0,0) rectangle (2.4, 3.2); %
-            \node[text=gray, font=\tiny] at (1.2, 1.6) {PHOTO};
+			\node[inner sep=0pt] at (1.2, 1.6) {\includegraphics[width=2.4cm, height=3.2cm]{avatar.jpg}};
         \end{tikzpicture}
     \end{minipage}
     \hfill
@@ -64,9 +64,9 @@
 \subsection{Université Grenoble Alpes \hfill Sep 2025 - Present}
 \subsubsection{Master 2: Geomechanics, Civil Engineering \& Risks \hfill \normalfont\textit{Grenoble, France}}
 \begin{itemize}
-    \item \textbf{Global Grade:} 13.47/20 (Admis). 
-    \item \textbf{Key Coursework:} Quantitative Image Analysis for Mechanics (16/20), Durability and Vulnerability of Structures (15.8/20), Soil Dynamics and Nonlinear Site Response Analysis (15/20).
-    \item \textbf{Thesis:} Numerical and experimental study of the thermo-hydro-mechanical (THM) behavior of concrete under severe accident conditions using a poro-mechanical approach.
+    \item \textbf{M2 Semester 1 Grade:} 13.47/20 (Admis).
+    \item \textbf{Key Coursework:} Numerical Methods for Nonlinear Mechanics, Durability and Vulnerability of Structures (15.8/20), Quantitative Image Analysis for Mechanics (16/20). % 
+    \item \textbf{Thesis:} Numerical and experimental study of the THM behavior of concrete under severe accident conditions using a poro-mechanical approach. % [cite: 161-163]
 \end{itemize}
 
 \vspace{0.15cm}
@@ -103,9 +103,10 @@
 \subsection{Site Engineer (Internship) \hfill Jun 2023 - Aug 2023} % [cite: 73]
 \subsubsection{Unicons Construction (Member of Coteccons Group) \hfill Binh Duong, Vietnam} 
 \begin{itemize}
-    \item \textbf{Project:} LEGO Manufacturing Vietnam Facility (Steel Structure specialist). 
-    \item Managed construction progress and inspections; coordinated between subcontractors and consultants. 
-    \item Completed additional internships at Hoa Binh Construction (2022) and SOL E\&C (2021).
+    \item \textbf{Project:} LEGO Manufacturing Vietnam (Phase 1) -- Moulding Building. %
+    \item Supervised structural fire protection implementations (Fire Protection Boards, Intumescent Paint, Concrete-encasement) to meet rigorous 120-minute Fire Protection Ratings. %
+    \item Optimized the execution schedule by transitioning the concrete encasement casting for columns from vertical to horizontal pouring. %
+    \item Conducted Quality Control per EC2: inspected steel frame erection via total station, verified tightening forces for Snug and Bearing bolts, and supervised Sika grouting and composite decking. %
 \end{itemize}
 
 \section{Projects}
